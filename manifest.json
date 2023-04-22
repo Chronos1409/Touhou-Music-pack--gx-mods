@@ -1,0 +1,101 @@
+{
+    "name": "Touhou Music Pack v1.0",
+    "description": "Credits goes to original artists",
+    "developer":
+    {
+        "name": "Nova LZ,Chronos"
+    },
+    "icons":
+    {
+        "512": "icon.png"
+    },
+    "manifest_version": 3,
+    "mod":
+    {
+        "license": "license.txt",
+        "payload":
+        {
+            "background_music":
+            [
+                "Backgroundmusic/touhou.mp3"
+            ],
+			"browser_sounds":
+			{
+				"HOVER":
+                [
+                    "sounds/baka_hover.mp3"
+                ],
+				"TAB_CLOSE":
+				[
+                    ""
+				]
+			},
+			
+  "page_styles":
+            [
+                {
+                    "matches":
+                    [
+                        "https://*.discord.com/*"
+                    ],
+                    "css":
+                    [
+                        "css/amoled.css"
+                    ]
+                }
+            ],
+            "theme":
+            {
+                "dark":
+                {
+                    "gx_accent":
+                    {
+                        "h": 183,
+                        "s": 100,
+                        "l": 36
+                    },
+                    "gx_secondary_base":
+                    {
+                        "h": 204,
+                        "s": 4,
+                        "l": 22
+                    }
+                },
+                "light":
+                {
+                    "gx_accent":
+                    {
+                        "h": 357,
+                        "s": 57,
+                        "l": 53
+                    },
+                    "gx_secondary_base":
+                    {
+                        "h": 359,
+                        "s": 100,
+                        "l": 49
+                    }
+                }
+            },
+            "wallpaper":
+            {
+                "dark":
+                {   
+                    "image": "video.webm", 
+					"first_frame" : "firstframe.png",
+                    "text_color": "#FFFFFF",
+                    "text_shadow": "#757575"
+                },
+                "light":
+                {
+                    "image": "light_video.webm", 
+					"first_frame" : "light_firstframe.png",
+                    "text_color": "#FFFFFF",
+                    "text_shadow": "#0B000E"
+                }
+            }
+        },
+        "schema_version": 1
+    },
+    "version": "1.0"
+}
